@@ -1,0 +1,20 @@
+<section class="main-component">
+  <header>
+    <h1>Modal Example</h1>
+    <button (click)="toggleDisplayModal()">Sign in</button>
+  </header>
+  <section>
+    <article>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut metus semper, dignissim urna a, tristique orci. Nullam cursus metus lorem, ut scelerisque purus convallis eget. Maecenas pretium, felis ac euismod facilisis, nisl elit volutpat turpis, sit amet aliquam est massa eget odio. Fusce maximus mi et lectus varius egestas et et elit. Ut nunc diam, dictum id velit eget, ultricies condimentum elit. Integer consectetur varius enim, non dictum mi auctor sit amet. Pellentesque fringilla a nibh ac mollis. Nunc scelerisque, elit at maximus porta, velit nisi efficitur justo, ut faucibus felis urna non magna. Sed posuere augue orci. Vestibulum a diam quis risus ullamcorper ultrices non ut nibh. Proin sodales pulvinar nibh et venenatis. Fusce vel pretium mi. Phasellus congue ultricies tortor in tempor. Fusce magna libero, tincidunt a varius nec, viverra sit amet tortor. Maecenas aliquet pharetra gravida.
+
+        Maecenas non nunc id eros commodo sagittis. Nunc interdum blandit faucibus. Aenean pretium arcu ac ipsum suscipit, vitae auctor mi maximus. Suspendisse scelerisque ante id posuere consequat. In turpis turpis, elementum at auctor vel, vestibulum vitae neque. Cras lacinia egestas nunc, et finibus tellus. Mauris luctus accumsan quam ut consectetur. Donec ut nisl at nibh fermentum blandit. Maecenas eu velit id dui vehicula aliquet eget et est. Fusce risus leo, viverra eu porttitor at, lobortis vitae diam. Vivamus non erat orci. Nulla quam turpis, fermentum ut odio sit amet, fringilla euismod turpis. Sed tristique molestie lorem eu euismod. Nulla lacinia vestibulum interdum.
+      </p>
+    </article>
+  </section>
+  <!-- the if statement to toggle to display the modal-->
+  <section *ngIf="modalOpen">
+    <!-- as you can see i passing down the method to the child component  whats in the [] is what the child will refer to the method and the "" is what the method is refer to the parent component which is the main -->
+    <app-modal [toggleDisplayModal]="toggleDisplayModal"></app-modal>
+  </section>
+</section>

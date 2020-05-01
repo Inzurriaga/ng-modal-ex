@@ -1,0 +1,30 @@
+.modal-component {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-component form {
+  position: relative;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  height: 200px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modal-component button:nth-child(1) {
+  all: unset;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
